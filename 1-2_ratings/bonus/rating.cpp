@@ -40,7 +40,7 @@ Rating::Rating()
     // other constructor called
 }
 
-void Rating::rate()
+void Rating::input_rating()
 {
     quality      = (double) prompt_rating("Qualitat      : ");
     pricing      = (double) prompt_rating("Preis-Leistung: ");

@@ -18,7 +18,7 @@ public:
 
     Rating();
 
-    void rate();
+    void input_rating();
     void print();
 };
 

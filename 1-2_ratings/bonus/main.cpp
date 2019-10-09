@@ -99,7 +99,7 @@ void add_rating_to_trip(std::vector<Trip>& trips)
     else
     {
         Rating r;
-        r.rate();
+        r.input_rating();
         t->add_rating(r);
     }
 }

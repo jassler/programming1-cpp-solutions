@@ -5,7 +5,7 @@ int main()
     Trip t("Malta", 10, 300);
 
     std::cout << "Bewerten Sie Ihre Reise nach " << t.destination << "\n";
-    t.rating.rate();
+    t.rating.input_rating();
 
     std::cout << "\nEine Bewertung wurde abgegeben fur folgende Reise:\n";
     std::cout << "Reiseziel        : " << t.destination << "\n";
