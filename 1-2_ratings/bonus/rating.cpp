@@ -14,12 +14,17 @@ int prompt_rating(std::string prompt)
         std::cout << prompt;
         std::getline(std::cin, line);
 
-        int result = std::stoi(line);
-        if(result >= POOR && result <= EXCELLENT)
-            // success! it's within range
-            return result;
-        
-        std::cout << "Bewertung muss eine Zahl von " << POOR << " bis " << EXCELLENT << " sein!\n\n";
+        try {
+            int result = std::stoi(line);
+            if(result >= POOR && result <= EXCELLENT)
+                // success! it's within range
+                return result;
+            
+            std::cout << "Bewertung muss eine Zahl von " << POOR << " bis " << EXCELLENT << " sein!\n\n";
+        } catch(...)
+        {
+            std::cout << "Eingabe muss eine (korrekte) Zahl sein\n\n";
+        }
     }
 }
 
@@ -45,9 +50,8 @@ void Rating::rate()
 
 void Rating::print()
 {
-    char star = '*';
-    std::cout << "Qualitat      : " << std::string((int) quality, star) << "\n";
-    std::cout << "Preis-Leistung: " << std::string((int) pricing, star) << "\n";
-    std::cout << "Sauberkeit    : " << std::string((int) cleanliness, star) << "\n";
-    std::cout << "Komfort       : " << std::string((int) accomodation, star) << "\n";
+    std::cout << "Qualitat      : " << quality << "\n";
+    std::cout << "Preis-Leistung: " << pricing << "\n";
+    std::cout << "Sauberkeit    : " << cleanliness << "\n";
+    std::cout << "Komfort       : " << accomodation << "\n";
 }
