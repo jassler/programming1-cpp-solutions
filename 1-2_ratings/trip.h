@@ -1,6 +1,7 @@
 #ifndef H_TRIP
 #define H_TRIP
 
+#include <string>
 #include "rating.h"
 
 class Trip

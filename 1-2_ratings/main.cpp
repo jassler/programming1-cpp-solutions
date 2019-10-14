@@ -1,3 +1,4 @@
+#include <iostream>
 #include "trip.h"
 
 int main()

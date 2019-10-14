@@ -1,8 +1,6 @@
 #ifndef H_RATING
 #define H_RATING
 
-#include <iostream>
-
 enum Rating_Scale { POOR = 1, OK, GOOD, VERY_GOOD, EXCELLENT };
 
 class Rating

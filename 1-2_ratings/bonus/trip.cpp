@@ -1,3 +1,4 @@
+#include <iostream>
 #include "trip.h"
 
 Trip::Trip(std::string _dest, unsigned int _duration, unsigned int _price)
