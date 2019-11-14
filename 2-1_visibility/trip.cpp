@@ -27,7 +27,7 @@ Rating Trip::get_rating()
     double accomodation = ratings[0].accomodation;
 
     // already have index 0 from initialization, start at 1
-    for(int i = 1; i < ratings.size(); i++)
+    for(unsigned int i = 1; i < ratings.size(); i++)
     {
         quality += ratings[i].quality;
         pricing += ratings[i].pricing;

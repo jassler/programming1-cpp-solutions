@@ -7,7 +7,7 @@
 
 class Trip
 {
-private:
+public:
     // name of the location
     std::string destination;
 
@@ -19,17 +19,13 @@ private:
 
     std::vector<Rating> ratings;
 
-public:
     Trip(std::string _dest, unsigned int _duration, unsigned int _price);
 
     void add_rating(Rating r);
 
-    // it doesn't matter if return type is infront or behind function name (trailing return type)
-    // in this case I think it's visually more appealing to have all getter function names start in the same column
-    auto get_destination() -> std::string;
-    auto get_duration() -> unsigned int;
-    auto get_price() -> unsigned int;
-    auto get_rating() -> Rating;
+    // calculate average of all ratings
+    // if no rating is present, it returns the default rating
+    Rating get_rating();
 
     void print();
 };

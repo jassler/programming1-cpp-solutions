@@ -100,6 +100,9 @@ int main()
     std::string line;
     std::cout << "How big should the buffer be: ";
     std::getline(std::cin, line);
+
+	// note: throws error if input isn't a number
+	// could sorround with try catch, but do your own job!
     int size = std::stoi(line);
 
     // create calcbox with specified buffer size

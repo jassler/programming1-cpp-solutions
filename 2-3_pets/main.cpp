@@ -17,4 +17,12 @@ int main()
         p->speak();
         std::cout << "\n";
     }
+
+
+	// created pets with 'new' keyword
+	// -> has to be deleted now
+	for(auto& p : pets)
+	{
+		delete p;
+	}
 }

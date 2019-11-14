@@ -1,6 +1,6 @@
-#include "rating.h"
-#include <string>
 #include <iostream>
+#include <string>
+#include "rating.h"
 
 /*
  * Ask user to rate a specific category (prompt)
@@ -42,14 +42,12 @@ Rating::Rating()
     // other constructor called
 }
 
-Rating Rating::input_rating()
+void Rating::input_rating()
 {
-    double quality      = (double) prompt_rating("Qualitat      : ");
-    double pricing      = (double) prompt_rating("Preis-Leistung: ");
-    double cleanliness  = (double) prompt_rating("Sauberkeit    : ");
-    double accomodation = (double) prompt_rating("Komfort       : ");
-
-    return Rating(quality, pricing, cleanliness, accomodation);
+    quality      = (double) prompt_rating("Qualitat      : ");
+    pricing      = (double) prompt_rating("Preis-Leistung: ");
+    cleanliness  = (double) prompt_rating("Sauberkeit    : ");
+    accomodation = (double) prompt_rating("Komfort       : ");
 }
 
 void Rating::print()
@@ -59,4 +57,3 @@ void Rating::print()
     std::cout << "Sauberkeit    : " << cleanliness << "\n";
     std::cout << "Komfort       : " << accomodation << "\n";
 }
-
