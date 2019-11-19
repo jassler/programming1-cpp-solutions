@@ -5,13 +5,13 @@ VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1-1_rectangle", "1-1_rectangle\1-1_rectangle.vcxproj", "{20DB65EF-DA12-4365-823A-2AC3D46BA985}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exercise_1", "exercise_1", "{496800DE-BF3B-49A9-B282-79E44615E173}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_classes", "1_classes", "{496800DE-BF3B-49A9-B282-79E44615E173}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1-2_ratings", "1-2_ratings\1-2_ratings.vcxproj", "{187AE212-682C-4924-B069-8594367B4B06}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1-2_ratings_bonus", "1-2_ratings_bonus\1-2_ratings_bonus.vcxproj", "{684C37AB-9E95-42E9-B6C7-C979E10E5635}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exercise_2", "exercise_2", "{194FCC79-296F-42F1-8352-7E2026236435}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_access", "2_access", "{194FCC79-296F-42F1-8352-7E2026236435}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2-1_visibility", "2-1_visibility\2-1_visibility.vcxproj", "{9A6EC6C7-04B3-434B-8970-6E6BD9A0D07E}"
 EndProject
@@ -19,7 +19,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2-2_calcbox", "2-2_calcbox\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2-3_pets", "2-3_pets\2-3_pets.vcxproj", "{946654D0-FDF8-48AC-89AE-0DFE9F938543}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exercise_3", "exercise_3", "{073308CD-1D5C-42D7-8DEC-999ED2B2AEC0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_inheritance", "3_inheritance", "{073308CD-1D5C-42D7-8DEC-999ED2B2AEC0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3-a_canvas", "3-a_canvas\3-a_canvas.vcxproj", "{6394F9F6-D5D6-4F5F-B74C-3F04CC142E66}"
 EndProject
