@@ -58,9 +58,9 @@ void add_city(std::map<std::string, size_t>& population)
 		if (pop_str.find_first_not_of("0123456789") != std::string::npos)
 			std::cout << "Only enter digits!\n";
 
-		// check if number is too long (no city should have more than 1 trillion people
+		// check if number is too long (no city should have more than 1 trillion people)
 		// (hopefully)
-		// also, check if size_t on your machine is 64 bit or 32 bit (in which case it cannot exceed somewhere around 4.3 billion)
+		// if you use this code, also check if size_t on your machine is 64 bit or 32 bit (in which case pop-size cannot exceed somewhere around 4.3 billion)
 		else if (pop_str.size() > 13)
 			std::cout << "Number too long!\n";
 
