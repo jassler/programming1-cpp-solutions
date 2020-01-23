@@ -160,3 +160,100 @@ Erstellen Sie eine Klasse `Canvas`, mit der sich ein Bild aus einzelnen Shapes z
 ### 3-c: Maaalfläche
 
 Um die Verwirrung nun komplett zu machen, lassen Sie `Canvas` von `Shape` erben und versuchen Sie, ein Bild aus mehreren `Canvas` zu machen.
+
+## Übungsblatt 4: Containers
+
+### 4-1: std::string
+
+Ziehen Sie sich die Dokumentation zu `std::string` zur Hand, um möglichst elegante Lösungen zu finden.
+
+#### 4-1 a
+
+Befehlszeilenargumente werden bei C++ Programmen in der main-Methode wie folgt erfasst
+
+```C++
+int main(int argc, char* argv[]) { /* ... */ }
+```
+
+`argc` beschreibt die Anzahl der Argumente, `argv` die Argumente selbst. `argv[0]` sollte beispielsweise den Namen der .exe-Datei angeben, die ausgeführt wird.
+Diese Argumente sind allerdings vom Typ `char*`. Um die String-Bibliothek nützen zu können, wandeln Sie diese Parameter in `std::string` um.
+
+#### 4-1 b
+
+Folgende C-Funktion prüft, ob ein Passwort richtig eingegeben wurde.
+
+```C++
+bool is_password_correct(char* password, char* input) {
+    return strcmp(password, input) == 0;
+}
+```
+
+Wandeln Sie diese Funktion in ein C++ Konstrukt, das anstelle von `char*` Parametern `std::string` akzeptiert.
+
+#### 4-1 c
+
+Mittels eines vom Benutzer definierten Zeichens soll ein String erstellt werden, das dieses Zeichen 50 Mal wiederholt.
+
+#### 4-1 d
+
+Folgende Funktionsvorlage sei gegeben:
+
+```C++
+void add_excitement(std::string& msg, unsigned int excitement_level)
+```
+
+Der Nachricht (`msg`) soll hierbei je nach Höhe des `excitement_level`‘s Ausrufezeichen, Einser oder das Wort EINS bzw. ELF angehängt werden (https://praxistipps.chip.de/was-heisst-11elf-das-internetphaenomen-einfach-erklaert_94397). Bei einem `excitement_level` über 4 soll zusätzlich die Nachricht in Großbuchstaben umgewandelt werden.
+Beachten Sie, dass der Parameter msg als Referenz übergeben wird!
+
+#### 4-1 e
+
+Erstellen Sie eine Funktion `std::string reverse_string(std::string input)`, die einen übergebenen String in umgekehrter Reihenfolge zurückgibt.
+
+#### 4-1 f
+
+Der Benutzer soll einen ganzen Satz eingeben können – sehen Sie sich hierfür die Funktion `std::getline()` aus iostream an. Unterteilen Sie den Satz in ihre einzelnen Wörter, drehen Sie die Reihenfolge der Buchstaben um und geben Sie anschließend den Satz mit den veränderten Wörtern aus. Satzzeichen dürfen vorerst ignoriert werden.
+
+Beispiel: Aus „veni vidi vici“ wird „inev idiv iciv“.
+
+### 4-2: std::vector
+
+#### 4-2 a
+
+Ein Schüler (= Benutzer) soll die Noten seiner Prüfungen eintragen. Anschließend wird seine Durchschnittsnote inklusive dem Rechenweg angezeigt.
+
+#### 4-2 b
+
+Gegeben sei folgender Vektor:
+
+```C++
+std::vector<double> temperature{0.3, 0.5, 1.4, 3, 2.7, 1.2, 0, -0.1, -0.3, -0.9};
+```
+
+Die Temperaturwerte sind in Celsius angeben. Wandeln Sie diese direkt in Fahrenheit um.
+Die Umrechnungsformel hierzu lautet: oF = oC * 1.8 + 32
+
+#### 4-2 c
+
+Aus dem `temperature`-Vektor der vorigen Teilaufgabe (mit den Celsius-Werten) soll ein neues gebildet werden:
+
+- Kopieren Sie die Elemente von Index 1 (= 0.5) bis Index 8 (= -0.3) in einen neuen Vektor.
+- Entfernen Sie alle negativen Zahlen im neuen Vektor.
+- Fügen Sie zwischen zwei Index den Durchschnitt der beiden Zahlen hinzu. Beispielsweise soll bei 0.5 und 1.4 dazwischen die Zahl 0.95 eingefügt werden.
+
+Am Ende sollte der neue Vektor folgende Zahlen beinhalten: `{0.5, 0.95, 1.4, 2.2, 3, 2.85, 2.7, 1.95, 1.2, 0.6, 0}`
+
+#### 4-2 d
+
+Erstellen Sie ein zwei-dimensionales Vektor-Array, das `char`‘s beinhaltet. Versuchen Sie daraus ein 8x8 Schachbrettmuster zu bilden (`'#'` für die schwarzen, Leerzeichen für die weißen Felder) und geben Sie dieses anschließend in der Konsole aus.
+
+### 4-3: std::map
+
+#### 4-3 a
+
+Erstellen Sie eine Map, die die Einwohnerzahl für bestimmte Städte beinhaltet. Fügen Sie dem ein paar Städte mit ihren Einwohnerzahlen hinzu.
+
+Über die Kommandozeileneingabe soll der Benutzer erfahren, wie viele Einwohner in der von ihm befragten Stadt leben. Ist seine angefragte Stadt nicht in der Map vorhanden, soll dem Benutzer neben der Fehlernachricht die Auswahl der Städte angezeigt werden, die abgefragt werden kann.
+
+#### 4-3 b
+
+Erweitern Sie die vorige Teilaufgabe dadurch, dass der Benutzer selber Einträge hinzufügen, löschen oder gar die gesamte Tabelle leeren kann. Zusätzlich soll der gesamte Tabelleninhalt ausgegeben werden können.
