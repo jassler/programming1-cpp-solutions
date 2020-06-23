@@ -45,6 +45,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6_operator_overload", "6_op
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6-1_arithmetic_operators", "6-1_arithmetic_operators\6-1_arithmetic_operators.vcxproj", "{3D277683-2BF7-40BE-9A40-6DB228191D39}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6-2_vector_output", "6-2_vector_output\6-2_vector_output.vcxproj", "{596ED27D-3BD2-467C-8691-3B96BC64A8B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -173,6 +175,14 @@ Global
 		{3D277683-2BF7-40BE-9A40-6DB228191D39}.Release|x64.Build.0 = Release|x64
 		{3D277683-2BF7-40BE-9A40-6DB228191D39}.Release|x86.ActiveCfg = Release|Win32
 		{3D277683-2BF7-40BE-9A40-6DB228191D39}.Release|x86.Build.0 = Release|Win32
+		{596ED27D-3BD2-467C-8691-3B96BC64A8B5}.Debug|x64.ActiveCfg = Debug|x64
+		{596ED27D-3BD2-467C-8691-3B96BC64A8B5}.Debug|x64.Build.0 = Debug|x64
+		{596ED27D-3BD2-467C-8691-3B96BC64A8B5}.Debug|x86.ActiveCfg = Debug|Win32
+		{596ED27D-3BD2-467C-8691-3B96BC64A8B5}.Debug|x86.Build.0 = Debug|Win32
+		{596ED27D-3BD2-467C-8691-3B96BC64A8B5}.Release|x64.ActiveCfg = Release|x64
+		{596ED27D-3BD2-467C-8691-3B96BC64A8B5}.Release|x64.Build.0 = Release|x64
+		{596ED27D-3BD2-467C-8691-3B96BC64A8B5}.Release|x86.ActiveCfg = Release|Win32
+		{596ED27D-3BD2-467C-8691-3B96BC64A8B5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,6 +203,7 @@ Global
 		{883FBB61-CA1C-4A03-85F7-B02E81720787} = {FF9AF5DF-FFAD-4BB2-B9D4-D2B61DAB58A0}
 		{BBF1551C-BA3B-4EB3-9EFA-7DAE52CC0DE7} = {FF9AF5DF-FFAD-4BB2-B9D4-D2B61DAB58A0}
 		{3D277683-2BF7-40BE-9A40-6DB228191D39} = {E34111C3-C52B-4FDF-920D-599FAC2A89BF}
+		{596ED27D-3BD2-467C-8691-3B96BC64A8B5} = {E34111C3-C52B-4FDF-920D-599FAC2A89BF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51B75FDE-C88D-42EC-BBD9-2BA83AB75895}
